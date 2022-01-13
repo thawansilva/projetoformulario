@@ -9,7 +9,7 @@ body {
     color: white;
     background: rgb(106, 107, 161, .3);
     background-repeat: no-repeat;
-    background-image: url(https://images.pexels.com/photos/5240544/pexels-photo-5240544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(programming.jpeg);
     background-size: cover;
     background-position: center center;
 }
@@ -20,6 +20,7 @@ h1 {
     border-radius: 10px;
     margin-left: 4rem;
 }
+/* Barra de Navegação */
 .navbar {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -71,6 +72,7 @@ h1 {
 h2 {
     margin-bottom: .8rem;
 }
+/* Formulário */
 form {
     background-color: rgb(41, 41, 72, 0.9);
     color: white;
@@ -116,8 +118,3 @@ button:hover {
     background-color: #24944f;
     cursor: pointer;
 }
-/* input, textarea{
-    width: 100%;
-    border-radius: 5px;
-    padding: .375rem .75rem;
-} */
