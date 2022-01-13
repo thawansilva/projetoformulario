@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Thawan">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="logo.html"><h1>Logo</h1></a>
+        <ul class="navbar-item">
+            <li id="first-item"><a href="signup.html">Registrar-se</a></li>
+            <li id="last-item"><a href="login.html">Entrar</a></li>
+        </ul>
+    </nav>    
+    <div class="texto-princ">
+            <h2>Formulário de Pesquisa</h2>
+            <p><i>Muito obrigado por ajudar a melhorar nossa plataforma</i></p>
+    </div>
+    <form action="form.php" method="post">
+        <div class="form-group">
+            <label class="label-name">Nome</label> 
+            <input type="text" placeholder="Digite seu nome" required="required">
+        </div>
+        <div class="form-group">
+            <label class="label-name">Email</label> 
+            <input type="email" placeholder="Digite seu Email" required="required">
+        </div>
+        <div class="form-group">
+            <label class="label-name">Idade <span>(opcional)</span></label>
+            <input type="number" placeholder="Idade" min="10" max="99">
+        </div>
+        <div class="form-group">
+            <label class="label-name">Estado Civil</label>
+                <Select required="required">
+                    <option value="">Selecione seu estado civil</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="separado">Separado</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="viuvo">Viúvo</option>
+            </Select>
+        </div>
+        <div class="form-group">
+            <label class="label-name" id="checkbtn">Você recomendaria a plataforma para um amigo?
+                    <label><input type="radio" name="tipo" value="com certeza" class="input-radio" checked>Com certeza</label>
+                    <label><input type="radio" name="tipo" value="talvez" class="input-radio">Talvez</label>
+                    <label><input type="radio" name="tipo" value="nao recomendaria" class="input-radio">Não recomendaria</label>
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="label-name" id="checkbtn">Quais linguagens você sabe?
+                <label><input type="checkbox" class="input-check">Javascript</label>
+                <label><input type="checkbox" class="input-check">PHP</label>
+                <label><input type="checkbox" class="input-check">Java</label>
+                <label><input type="checkbox" class="input-check">C++</label>
+                <label><input type="checkbox" class="input-check">Objective-C</label>
+                <label><input type="checkbox" class="input-check">Swift</label>
+            </label>
+        </div>
+            <div class="form-group">
+                <label class="label-name">Alguma sugestão ou comentário?</label>
+                <textarea name="comentario" cols="30" rows="10" placeholder="Digite um comentário"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+</body>
+</html>
